@@ -1,4 +1,4 @@
-# SinglePDF-RAG-Pipeline
+# PDF-RAG-Pipeline
 
 The main goal of the project is to develop a system capable of retrieving relevant information from a document corpus and generating responses to user queries based on the retrieved information.
 
@@ -13,7 +13,7 @@ Question Answering (QA) Chain: A pre-trained question answering model, powered b
 
 Workflow:
 1. Document Processing: Text is extracted from PDF documents and split into smaller chunks to facilitate efficient processing.
-2. Embedding Generation: The text chunks are converted into numerical representations using FAISS, enabling similarity-based retrieval.
+2. Embedding Generation: Converts text chunks into numerical representations using FAISS, enabling similarity-based retrieval.
 3. Query Processing: User queries are processed, and relevant document chunks are retrieved using similarity search techniques.
 4. Question Answering: The retrieved document chunks, along with the user query, are provided as input to the pre-trained question answering model (Ollama). The model analyzes the input data and generates responses based on the content of the document chunks and the query.
 5. Response Generation: The system outputs the generated response, providing answers to user queries based on the analyzed document content.
